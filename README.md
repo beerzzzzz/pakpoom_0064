@@ -1,2 +1,4 @@
 # pakpoom_0064
-Git 1st class. 
+Quiz use code in these 2 files
+- MotionGui_Code.py
+- RemoteGui_Code.py 
