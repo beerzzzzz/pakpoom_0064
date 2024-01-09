@@ -1,0 +1,17 @@
+<launch>
+
+	<node name="Turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen">
+	</node>
+	
+	<arg name="LiVel" default = "1.0" />
+	<arg name="AngVel" default = "1.0" />
+	<node name="Remote" pkg="teachbeer" type="TestGui.py" output="screen">
+		<param name="LiVel" value="$(arg LiVel)"/>
+		<param name="AngVel" value="$(arg AngVel)"/>
+	</node>
+	
+	<node name="Motion" pkg="teachbeer" type="TestGui2.py" output="screen">
+	</node>
+	 
+
+</launch>
